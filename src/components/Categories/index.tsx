@@ -37,7 +37,7 @@ function Categories() {
   ];
 
   return (
-    <div className="categories-container">
+    <section className="categories-container">
       <ul>
         {categories.map((item, index) => (
           <li key={index}>
@@ -48,7 +48,7 @@ function Categories() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 

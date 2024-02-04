@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
+import RelatedProducts from '../components/RelatedProducts'
+import Products from '../components/Products'
 
 import "./style.scss";
 
@@ -15,6 +17,8 @@ function App() {
       <Navigation />
       <Banner />
       <Categories/>
+      <RelatedProducts/>
+      <Products/>
     </div>
   );
 }
