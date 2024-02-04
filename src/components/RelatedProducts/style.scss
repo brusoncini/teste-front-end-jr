@@ -38,20 +38,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 20px;
 
       li {
-          border: solid 1px #BDBDBD;
-          padding: 12px 70px;
+        border: solid 1px #bdbdbd;
+        padding: 12px 70px;
 
-          a {
-            text-decoration: none;
-            color: #3B3B3B;
+        a {
+          text-decoration: none;
+          color: #3b3b3b;
 
-            &:hover {
-                font-weight: 700;
-                color:#f71963;
-            }
+          &:hover {
+            font-weight: 700;
+            color: #f71963;
           }
+        }
       }
     }
   }

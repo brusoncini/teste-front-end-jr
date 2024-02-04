@@ -55,7 +55,7 @@ function Products() {
   };
 
   return (
-    <section className="product-list">
+    <section>
       
       <Slider {...settings}>
         {productList.map((product: Product, index: number) => (
@@ -78,9 +78,7 @@ function Products() {
                 ou 2x de R$ {(product.price * 0.5).toLocaleString("pt-BR")} sem
                 juros
               </p>
-              <span className="shipping">
-                Frete grátis
-              </span>
+              <span className="shipping">Frete grátis</span>
               <button>COMPRAR</button>
             </div>
           </div>

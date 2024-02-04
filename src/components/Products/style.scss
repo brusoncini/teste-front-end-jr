@@ -1,11 +1,13 @@
-button {
-  border: none;
-  background: transparent;
+.slick-initialized.slick-slider {
+  display: flex;
+
+  button {
+    border: none;
+    background: transparent;
+  }
 }
 
 .product-container {
-  display: flex;
-
   .product-item {
     width: 270px;
     padding: 0.5rem;
