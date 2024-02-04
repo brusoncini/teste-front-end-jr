@@ -1,3 +1,53 @@
 .products-container {
-    display: block;
+    display: flex;
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    color: #3f3f40;
+    width: 270px;
+    height: 450px;
+    padding: 8px;
+    box-shadow: 1px 7px 5px 5px rgba(0, 0, 0, 0.16);
+    border-radius: 0.5rem;
+    
+
+    button {
+      margin-top: 20px;
+      background-color: #f71963;
+      color: white;
+      width: 245px;
+      height: 44px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .original-price {
+      font-size: 16px;
+      text-decoration: line-through;
+      color: #808080;
+      margin-top: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .half-price {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .shipping {
+      font-size: 12px;
+      color: #f71963;
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: lighter;
+      margin-top: 10px;
+    }
+  }
 }

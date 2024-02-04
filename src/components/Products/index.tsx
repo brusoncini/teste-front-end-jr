@@ -1,51 +1,37 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import productList from "../../data/productList.js";
+import "./style.scss";
 
-interface Produto {
+interface Product {
   productName: string;
   descriptionShort: string;
   photo: string;
   price: number;
 }
 
-const Products: React.FC = () => {
-  const [produtos, setProdutos] = useState<Produto[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
-        );
-        setProdutos(response.data.products);
-      } catch (error) {
-        console.error("Erro ao obter dados da API:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+function Products() {
   return (
-    <div>
-      <h1>Lista de Produtos</h1>
-      <div>
-        {produtos.map((produto, index) => (
-          <div key={index}>
-            <h2>{produto.productName}</h2>
-            <p>Preço: R$ {produto.price.toFixed(2)}</p>
-            <p>Descrição: {produto.descriptionShort}</p>
-            <img
-              src={produto.photo}
-              alt={produto.productName}
-              style={{ maxWidth: "200px" }}
-            />
-            <hr />
+    <section>
+      <div className="products-container">
+        {productList.map((product: Product) => (
+          <div className="product-list" key={product.productName}>
+            <img src={product.photo} alt={product.descriptionShort} />
+            <p className="description">{product.descriptionShort}</p>
+            <p className="original-price">
+              R$ {product.price.toLocaleString("pt-BR")}
+            </p>
+            <p className="price">R$ {product.price.toLocaleString("pt-BR")}</p>
+            <p className="half-price">
+              ou 2x de R$ {(product.price * 0.5).toLocaleString("pt-BR")} sem
+              juros
+            </p>
+            <span className="shipping">Frete grátis</span>
+            <button>COMPRAR</button>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default Products;

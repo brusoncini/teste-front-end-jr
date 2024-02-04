@@ -1,5 +1,4 @@
 .list-container {
-  font-size: 12;
   color: #9f9f9f;
   border-bottom: solid 1px #f0f0f0;
 
@@ -10,6 +9,7 @@
     gap: 120px;
 
     li {
+      font-size: 12px;
       display: flex;
       gap: 10px;
       align-items: center;
