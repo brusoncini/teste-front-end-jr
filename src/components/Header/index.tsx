@@ -24,7 +24,7 @@ function Header() {
       
       <div className="header-icons">
         {icons.map((icon, index) => (
-          <img key={index} src={icon.src} alt={icon.alt} />
+          <a href="#"><img key={index} src={icon.src} alt={icon.alt} /></a>
         ))}
       </div>
     </header>

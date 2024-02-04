@@ -1,19 +1,19 @@
 .list-container {
   font-size: 12;
-  color: #a5a5a5;  
+  color: #9f9f9f;
+  border-bottom: solid 1px #f0f0f0;
 
   ul {
+    width: 100%;
     display: flex;
     justify-content: center;
     margin: 10px 32px;
     gap: 120px;
-    border-bottom:  solid 1px #a5a5a5;
 
     li {
       display: flex;
       gap: 10px;
       align-items: center;
-      margin-bottom: 10px;
     }
 
     p {
