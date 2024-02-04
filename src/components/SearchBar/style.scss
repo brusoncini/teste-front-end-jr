@@ -1,0 +1,28 @@
+.search-bar {
+  background-color: #f6f5f2;
+  width: 660px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+
+  input {
+    width: 100%;
+    background-color: #f6f5f2;
+    border: none;
+    border-radius: 8px;    
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #a5a5a5;
+    margin-left: 24px;
+  }
+
+  button {
+    background-color: #f6f5f2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-right: 24px;
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  border-bottom:  solid 1px #a5a5a5;
+  padding-bottom: 12px;
+
+  .header-icons {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 0 15px;
+    }
+  }
+}
