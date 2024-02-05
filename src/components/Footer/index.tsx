@@ -1,5 +1,6 @@
 import React from "react";
 import FooterInfo from "../FooterInfo";
+import FooterLogo from "../FooterLogo";
 
 function Footer() {
   const aboutUsLinks = ["CONHEÇA", "COMO COMPRAR", "INDICAÇÃO E DESCONTO"];
@@ -18,6 +19,7 @@ function Footer() {
         aboutUsLinks={aboutUsLinks}
         usefulInfoLinks={usefulInfoLinks}
       />
+      <FooterLogo />
     </footer>
   );
 }
