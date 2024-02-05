@@ -10,6 +10,7 @@ import Products from "../components/Products";
 import Partners from "../components/Partners";
 import ProductCards from "../components/ProductCards";
 import Brands from "../components/Brands";
+import Footer from "../components/Footer";
 
 import "./style.scss";
 
@@ -27,6 +28,7 @@ function App() {
       <Partners />
       <ProductCards />
       <Brands />
+      <Footer />
     </div>
   );
 }

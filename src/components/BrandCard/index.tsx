@@ -5,7 +5,9 @@ import cardLogo from "./img/CardLogo.svg";
 function BrandCard() {
   return (
     <div className="brand-card">
-      <img src={cardLogo} alt="logo vtex" />
+      <a href="#">
+        <img src={cardLogo} alt="logo vtex" />
+      </a>
     </div>
   );
 }
