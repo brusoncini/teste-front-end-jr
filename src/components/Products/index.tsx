@@ -1,11 +1,13 @@
-import React from "react";
-import productList from "../../data/productList.js";
-import Slider from "react-slick";
-import leftArrow from './img/LeftArrow.svg'
-import rightArrow from './img/RightArrow.svg'
+import React, { useState } from "react";
 import "./style.scss";
 
-interface Product {
+import productList from "../../data/productList.js";
+import Slider from "react-slick";
+import leftArrow from "./img/LeftArrow.svg";
+import rightArrow from "./img/RightArrow.svg";
+import Modal from "../Modal";
+
+export interface Product {
   productName: string;
   descriptionShort: string;
   photo: string;
@@ -54,20 +56,24 @@ function Products() {
     nextArrow: <NextArrow />,
   };
 
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+
+  const openModal = (product: Product) => {
+    setSelectedProduct(product);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
+
   return (
     <section>
-      
       <Slider {...settings}>
         {productList.map((product: Product, index: number) => (
-          <div className="product-container">
-            <div className="product-item" key={index}>
-              <img 
-              src={product.photo} 
-              alt={product.descriptionShort} 
-              />
-              <p className="description">
-                {product.descriptionShort}
-              </p>
+          <div className="product-container" key={index}>
+            <div className="product-item">
+              <img src={product.photo} alt={product.descriptionShort} />
+              <p className="description">{product.descriptionShort}</p>
               <p className="discount">
                 R$ {(product.price * 2).toLocaleString("pt-BR")}
               </p>
@@ -79,11 +85,14 @@ function Products() {
                 juros
               </p>
               <span className="shipping">Frete grátis</span>
-              <button>COMPRAR</button>
+              <button onClick={() => openModal(product)}>COMPRAR</button>
             </div>
           </div>
         ))}
       </Slider>
+      {selectedProduct && (
+        <Modal product={selectedProduct} closeModal={closeModal} />
+      )}
     </section>
   );
 }

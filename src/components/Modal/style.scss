@@ -1,0 +1,88 @@
+.modal {
+  position: fixed;
+  width: 770px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button-close {
+    position: absolute;
+    top: 16px;
+    right: 31px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .modal-name {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #041e50;
+    margin-bottom: 20px;
+  }
+
+  .modal-price {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 900;
+    color: #041e50;
+    margin-bottom: 15px;
+  }
+
+  .modal-description {
+    font-family: "Lato";
+    font-size: 10px;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 25px;
+  }
+
+  .modal-link {
+    font-family: "Lato";
+    font-size: 12px;
+    font-weight: 400;
+    color: #041e50;
+    margin-bottom: 15px;
+  }
+
+  .counter {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #041e50;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    margin: 15px 0px;
+
+    input {
+      width: 55px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    button {
+      background-color: transparent;
+    }
+  }
+
+  .buy-button {
+    width: 100%;
+    font-size: 16;
+    font-weight: 700;
+    background-color: #f71963;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+}
