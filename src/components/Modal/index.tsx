@@ -26,36 +26,40 @@ const Modal: React.FC<ModalProps> = ({ product, closeModal }) => {
   };
 
   return (
-    <div className="modal">
-      <button onClick={closeModal} className="button-close">
-        <img src={close} alt="fechar" />
-      </button>
+    <div>
+      <div className="modal-overlay"></div>
 
-      <div className="modal-photo">
-        <img src={product.photo} alt="" />
-      </div>
+      <div className="modal">
+        <button onClick={closeModal} className="button-close">
+          <img src={close} alt="fechar" />
+        </button>
 
-      <div>
-        <h2 className="modal-name">{product.productName}</h2>
-        <p className="modal-price">
-          R$ {product.price.toLocaleString("pt-BR")}
-        </p>
-        <p className="modal-description">{product.descriptionShort}</p>
-        <a href="#" className="modal-link">
-          Veja mais detalhes do produto {">"}
-        </a>
-
-        <div className="counter">
-          <button onClick={decreaseQuantity}>
-            <img src={minus} alt="diminuir" />
-          </button>
-          <input type="text" value={quantity} readOnly />
-          <button onClick={increaseQuantity}>
-            <img src={plus} alt="aumentar" />
-          </button>
+        <div className="modal-photo">
+          <img src={product.photo} alt="" />
         </div>
 
-        <button className="buy-button">COMPRAR</button>
+        <div>
+          <h2 className="modal-name">{product.productName}</h2>
+          <p className="modal-price">
+            R$ {product.price.toLocaleString("pt-BR")}
+          </p>
+          <p className="modal-description">{product.descriptionShort}</p>
+          <a href="#" className="modal-link">
+            Veja mais detalhes do produto {">"}
+          </a>
+
+          <div className="counter">
+            <button onClick={decreaseQuantity}>
+              <img src={minus} alt="diminuir" />
+            </button>
+            <input type="text" value={quantity} readOnly />
+            <button onClick={increaseQuantity}>
+              <img src={plus} alt="aumentar" />
+            </button>
+          </div>
+
+          <button className="buy-button">COMPRAR</button>
+        </div>
       </div>
     </div>
   );
