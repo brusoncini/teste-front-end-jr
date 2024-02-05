@@ -4,9 +4,12 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
-import RelatedProducts from '../components/RelatedProducts'
-import Products from '../components/Products'
-import Partners from '../components/Partners'
+import RelatedTitle from "../components/RelatedTitle";
+import RelatedProducts from "../components/RelatedProducts";
+import Products from "../components/Products";
+import Partners from "../components/Partners";
+import ProductCards from "../components/ProductCards";
+import Brands from "../components/Brands";
 
 import "./style.scss";
 
@@ -17,10 +20,13 @@ function App() {
       <Header />
       <Navigation />
       <Banner />
-      <Categories/>
-      <RelatedProducts/>
-      <Products/>
-      <Partners/>
+      <Categories />
+      <RelatedTitle />
+      <RelatedProducts />
+      <Products />
+      <Partners />
+      <ProductCards />
+      <Brands />
     </div>
   );
 }

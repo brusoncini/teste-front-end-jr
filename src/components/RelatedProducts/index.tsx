@@ -1,5 +1,5 @@
 import React from "react";
-import './style.scss'
+import "./style.scss";
 
 function RelatedProducts() {
   const categories = [
@@ -13,10 +13,6 @@ function RelatedProducts() {
 
   return (
     <section className="related-container">
-      <div className="related-title">
-        <h2>Produtos relacionados</h2>
-      </div>
-
       <div className="related-categories">
         <ul>
           {categories.map((item, index) => (
