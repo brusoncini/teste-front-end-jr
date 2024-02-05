@@ -69,7 +69,7 @@ function Products() {
                 {product.descriptionShort}
               </p>
               <p className="discount">
-                R$ {product.price.toLocaleString("pt-BR")}
+                R$ {(product.price * 2).toLocaleString("pt-BR")}
               </p>
               <p className="price">
                 R$ {product.price.toLocaleString("pt-BR")}

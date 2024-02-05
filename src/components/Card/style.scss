@@ -1,0 +1,44 @@
+.card {
+  position: relative;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.055) 20%,
+      #000000 95.04%
+    ),
+    url("./img/CardImage.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 350px;
+  border-radius: 20px;
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 120px 0px 10px 40px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 10px 0px 40px 40px;
+    }
+
+    button {
+      font-size: 16;
+      font-weight: 700;
+      background-color: #f71963;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 15px;
+      margin-left: 40px;
+    }
+  }
+}

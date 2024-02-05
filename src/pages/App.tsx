@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import Categories from "../components/Categories";
 import RelatedProducts from '../components/RelatedProducts'
 import Products from '../components/Products'
+import Partners from '../components/Partners'
 
 import "./style.scss";
 
@@ -19,6 +20,7 @@ function App() {
       <Categories/>
       <RelatedProducts/>
       <Products/>
+      <Partners/>
     </div>
   );
 }
