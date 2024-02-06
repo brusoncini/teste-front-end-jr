@@ -14,7 +14,6 @@ Projeto realizado para a vaga front-end jr da Econverse. Consiste em um modelo d
 * TypeScript
 * HTML
 * slick para o carrossel de produtos
-* axios para consumo de API
 
 ## 📌 Funcionalidades ##
 
@@ -28,7 +27,7 @@ Foi usado SASS como pré processador para os estilos da aplicação.
 
 ## 🚶 Acesso ##
 
-Deploy disponível no [Vercel](https://teste-front-end-jr-five.vercel.app/)).
+Deploy disponível no [Vercel](https://teste-front-end-jr-five.vercel.app/).
 
 Para baixar no seu computador:
 * clonar o repositório com `git clone`;
