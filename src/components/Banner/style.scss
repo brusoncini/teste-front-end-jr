@@ -1,6 +1,8 @@
+@import "../../styles/variables.scss";
+
 .banner {
   width: 100%;
-  
+
   .banner-container {
     position: relative;
     text-align: center;
@@ -11,36 +13,28 @@
       ),
       url("./img/Banner.svg");
     background-size: cover;
-    background-position: center;
+    background-position: center;    
     background-repeat: no-repeat;
     height: 395px;
-    color: white;
+    color: $white;
 
     .banner-title {
       text-align: start;
       font-weight: 600;
       line-height: 70px;
-      width: 822px;
-      height: 128px;
+      width: 60vw;
+      height: 18vh;
       padding: 5%;
 
       h2 {
         font-size: 48px;
+        font-weight: 600;
       }
 
       h3 {
         font-size: 36px;
+        font-weight: 600;
       }
-    }
-
-    button {
-      font-size: 18;
-      font-weight: 600;
-      background-color: #f71963;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 15px 50px;
     }
   }
 }

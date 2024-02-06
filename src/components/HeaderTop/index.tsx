@@ -4,7 +4,7 @@ import creditCard from "./img/CreditCard.svg";
 import truck from "./img/Truck.svg";
 import "./style.scss";
 
-function List() {
+function HeaderTop() {
   const items = [
     {
       icon: <img src={shieldCheck} alt="segurança" />,
@@ -46,4 +46,4 @@ function List() {
   );
 }
 
-export default List;
+export default HeaderTop;

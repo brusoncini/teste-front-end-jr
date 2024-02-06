@@ -1,5 +1,7 @@
+@import "../../styles/variables.scss";
+
 .list-container {
-  color: #9f9f9f;
+  color: $gray1;
   border-bottom: solid 1px #f0f0f0;
   width: 90%;
   margin: 0 auto;
@@ -20,7 +22,7 @@
     p {
       strong {
         font-weight: 700;
-        color: #f71963;
+        color: $pink;
       }
     }
   }

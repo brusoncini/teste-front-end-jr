@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import leftArrow from "./img/LeftArrow.svg";
 import rightArrow from "./img/RightArrow.svg";
 import Modal from "../Modal";
+import Button from '../Button'
 
 export interface Product {
   productName: string;
@@ -17,8 +18,8 @@ export interface Product {
 const PrevArrow = (props: any) => {
   const { onClick } = props;
   return (
-    <button className="arrow prev" onClick={onClick}>
-      <img src={leftArrow} alt="Previous" />
+    <button className="arrow-prev" onClick={onClick}>
+      <img src={leftArrow} alt="anterior" />
     </button>
   );
 };
@@ -26,8 +27,8 @@ const PrevArrow = (props: any) => {
 const NextArrow = (props: any) => {
   const { onClick } = props;
   return (
-    <button className="arrow next" onClick={onClick}>
-      <img src={rightArrow} alt="Next" />
+    <button className="arrow-next" onClick={onClick}>
+      <img src={rightArrow} alt="próximo" />
     </button>
   );
 };
@@ -85,7 +86,7 @@ function Products() {
                 juros
               </p>
               <span className="shipping">Frete grátis</span>
-              <button onClick={() => openModal(product)}>COMPRAR</button>
+              <Button text='COMPRAR' onClick={() => openModal(product)}/>
             </div>
           </div>
         ))}

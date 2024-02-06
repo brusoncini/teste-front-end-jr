@@ -1,6 +1,8 @@
+@import '../../styles/variables.scss';
+
 .email-card {
-  background-color: white;
-  color: #3f3f40;
+  background-color: $white;
+  color: $gray3;
   width: 380px;
   height: 260px;
   border-radius: 10px;
@@ -40,13 +42,8 @@
     }
 
     button {
-      background-color: #F71963;
       font-size: 14px;
       font-weight: 700;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
       padding: 15px 20px;
     }
   }

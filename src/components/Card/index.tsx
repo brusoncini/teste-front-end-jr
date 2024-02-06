@@ -1,18 +1,20 @@
 import React from "react";
 import "./style.scss";
 
+import Button from '../Button'
+
 interface CardProps {
   title: string;
   description: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, description }) => {
+function Card ({ title, description }: CardProps) {
   return (
     <div className="card">
       <div className="card-content">
         <h3>{title}</h3>
         <p>{description}</p>
-        <button>CONFIRA</button>
+        <Button text='CONFIRA'/>
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
+@import "../../styles/variables.scss";
+
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.40);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal {
@@ -14,11 +16,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: $white;
   padding: 20px;
   z-index: 1000;
   display: flex;
   justify-content: center;
+  gap: 80px;
   align-items: center;
 
   .button-close {
@@ -31,16 +34,16 @@
   }
 
   .modal-name {
-    font-family: "Lato";
+    font-family: $font-lato;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #041e50;
+    color: $dark-blue;
     margin-bottom: 20px;
   }
 
   .modal-price {
-    font-family: "Lato";
+    font-family: $font-lato;
     font-size: 20px;
     font-weight: 900;
     color: #041e50;
@@ -48,7 +51,7 @@
   }
 
   .modal-description {
-    font-family: "Lato";
+    font-family: $font-lato;
     font-size: 10px;
     font-weight: 400;
     color: #222222;
@@ -56,17 +59,17 @@
   }
 
   .modal-link {
-    font-family: "Lato";
+    font-family: $font-lato;
     font-size: 12px;
     font-weight: 400;
-    color: #041e50;
+    color: $dark-blue;
     margin-bottom: 15px;
   }
 
   .counter {
     display: flex;
     justify-content: center;
-    border: 2px solid #041e50;
+    border: 2px solid $dark-blue;
     border-radius: 5px;
     width: 110px;
     height: 35px;
@@ -78,20 +81,13 @@
       text-align: center;
     }
 
-    button {
+    .input-button {
       background-color: transparent;
     }
-  }
 
-  .buy-button {
-    width: 100%;
-    font-size: 16;
-    font-weight: 700;
-    background-color: #f71963;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 15px;
-    cursor: pointer;
+    .button {
+      font-size: 14px;
+      width: 100%;
+    }
   }
 }

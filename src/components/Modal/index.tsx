@@ -1,8 +1,8 @@
-// Modal.tsx
 import React, { useState } from "react";
 import "./style.scss";
 
-import { Product } from "../Products/index";
+import { Product } from "../Carousel";
+import Button from "../Button";
 import close from "./img/close.svg";
 import plus from "./img/plus.svg";
 import minus from "./img/minus.svg";
@@ -12,7 +12,7 @@ interface ModalProps {
   closeModal: () => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ product, closeModal }) => {
+function Modal({ product, closeModal }: ModalProps) {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => {
@@ -49,20 +49,20 @@ const Modal: React.FC<ModalProps> = ({ product, closeModal }) => {
           </a>
 
           <div className="counter">
-            <button onClick={decreaseQuantity}>
+            <button className="input-button" onClick={decreaseQuantity}>
               <img src={minus} alt="diminuir" />
             </button>
             <input type="text" value={quantity} readOnly />
-            <button onClick={increaseQuantity}>
+            <button className="input-button" onClick={increaseQuantity}>
               <img src={plus} alt="aumentar" />
             </button>
           </div>
 
-          <button className="buy-button">COMPRAR</button>
+          <Button text="COMPRAR" />
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Modal;

@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .search-bar {
   background-color: #f6f5f2;
   width: 660px;
@@ -12,7 +14,7 @@
     background-color: #f6f5f2;
     border: none;
     border-radius: 8px;    
-    font-family: "Poppins";
+    font-family: $font-poppins;
     font-size: 14px;
     color: #a5a5a5;
     margin-left: 24px;

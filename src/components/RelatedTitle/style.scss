@@ -1,8 +1,10 @@
+@import "../../styles/variables.scss";
+
 .related-title {
   h2 {
     font-size: 30px;
     font-weight: 700;
-    color: #f71963;
+    color: $pink;
     display: flex;
     justify-content: center;
     padding: 16px;

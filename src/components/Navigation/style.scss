@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .categories {
   font-size: 12px;
   font-weight: 600;
@@ -13,14 +15,14 @@
     gap: 90px;
 
     a {
-      color: #9f9f9f;
+      color: $gray1;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 10px;
 
       &:hover {
-        color: #f71963;
+        color: $pink;
       }
     }
   }

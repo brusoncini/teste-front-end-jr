@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .related-container {
   .related-categories {
     ul {
@@ -11,12 +13,11 @@
         padding: 12px 70px;
 
         a {
-          text-decoration: none;
-          color: #3b3b3b;
+          color: $gray3;
 
           &:hover {
             font-weight: 700;
-            color: #f71963;
+            color: $pink;
           }
         }
       }

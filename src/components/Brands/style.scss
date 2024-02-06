@@ -1,13 +1,17 @@
+@import '../../styles/variables.scss';
+
 .title {
-  font-size: 30px;
-  font-weight: 700;
-  color: #f71963;
-  text-align: center;
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $pink;
+    text-align: center;
+  }
 }
 
 .brands-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 50px 0px 80px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 0px 80px 0px;
 }

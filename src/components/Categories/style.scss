@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .categories-container {
   position: relative;
   width: 100%;
@@ -18,11 +20,11 @@
 
       a {
         text-decoration: none;
-        color: #4e4e4e;
+        color: $gray2;
         padding: 10px;
 
         &:hover {
-          color: #f71963;
+          color: $pink;
         }
 
         img {
@@ -32,7 +34,7 @@
           border-radius: 8px;
 
           &:hover {
-            background-color: white;
+            background-color: $white;
           }
         }
 
